@@ -1,0 +1,37 @@
+@import '../../styles/common';
+
+.List {
+  padding-left: var(--p-space-5);
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: disc outside none;
+
+  + .List {
+    margin-top: var(--p-space-4);
+  }
+}
+
+.typeNumber {
+  padding-left: var(--p-space-8);
+  list-style: decimal outside none;
+}
+
+.Item {
+  .List:first-child {
+    margin-top: var(--p-space-2);
+  }
+}
+
+.spacingLoose {
+  .Item {
+    margin-bottom: var(--p-space-2);
+
+    #{$se23} & {
+      margin-bottom: var(--p-space-1);
+    }
+  }
+}
+
+.Item:last-child {
+  margin-bottom: 0;
+}

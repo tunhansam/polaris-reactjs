@@ -1,0 +1,21 @@
+@import '../../styles/common';
+
+.FooterHelp {
+  display: flex;
+  justify-content: center;
+  margin: var(--p-space-5) 0;
+  width: 100%;
+
+  @media #{$p-breakpoints-sm-up} {
+    margin: var(--p-space-5);
+    width: auto;
+  }
+}
+
+.Text {
+  font-size: var(--p-font-size-100);
+  font-weight: var(--p-font-weight-regular);
+  line-height: var(--p-font-line-height-2);
+  border: none;
+  letter-spacing: initial;
+}

@@ -1,0 +1,102 @@
+@import '../../styles/common';
+
+.MediaCard {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+
+  &.portrait {
+    flex-flow: column nowrap;
+  }
+
+  @media #{$p-breakpoints-md-down} {
+    flex-flow: column nowrap;
+  }
+}
+
+.MediaContainer {
+  overflow: hidden;
+
+  &:not(.portrait) {
+    flex-basis: 40%;
+
+    @media #{$p-breakpoints-md-up} {
+      border-top-right-radius: 0;
+      border-top-left-radius: var(--p-border-radius-2);
+      border-bottom-left-radius: var(--p-border-radius-2);
+    }
+
+    &.sizeSmall {
+      flex-basis: 33%;
+    }
+  }
+
+  @media #{$p-breakpoints-sm-up} {
+    border-top-left-radius: var(--p-border-radius-2);
+    border-top-right-radius: var(--p-border-radius-2);
+  }
+}
+
+.InfoContainer {
+  position: relative;
+
+  &:not(.portrait) {
+    flex-basis: 60%;
+
+    &.sizeSmall {
+      flex-basis: 67%;
+    }
+  }
+}
+
+.Heading {
+  margin-right: var(--p-space-8);
+
+  #{$se23} & {
+    margin-right: 0;
+  }
+}
+
+.PrimaryAction {
+  margin-right: var(--p-space-2);
+
+  #{$se23} & {
+    margin-right: 0;
+  }
+}
+
+.SecondaryAction {
+  margin-left: -var(--p-space-2);
+
+  #{$se23} & {
+    margin-left: 0;
+  }
+}
+
+.ActionContainer {
+  padding-top: var(--p-space-2);
+
+  &.portrait {
+    padding-top: var(--p-space-8);
+
+    #{$se23} & {
+      padding-top: var(--p-space-2);
+    }
+  }
+
+  @media #{$p-breakpoints-md-down} {
+    padding-top: var(--p-space-8);
+
+    #{$se23} & {
+      padding-top: var(--p-space-2);
+    }
+  }
+}
+
+.Description {
+  #{$se23} & {
+    font-size: var(--p-font-size-75);
+    line-height: var(--p-font-line-height-1);
+  }
+}

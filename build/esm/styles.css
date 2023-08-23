@@ -5148,8 +5148,8 @@ html[class~="Polaris-Summer-Editions-2023"] .Polaris-TextField__Segment:last-chi
     margin-block-end: calc(var(--pc-choice-bleed-block-end, var(--pc-choice-space-0)) * -1);
     margin-inline-start: calc(var(--pc-choice-bleed-inline-start, var(--pc-choice-space-0)) * -1);
     margin-inline-end: calc(var(--pc-choice-bleed-inline-end, var(--pc-choice-space-0)) * -1); /* width/height has to account for the extra padding from bleed */
-    inline-size: calc(var(--pc-choice-fill, auto) + var(--pc-choice-bleed-inline-start, var(--pc-choice-space-0)) + var(--pc-choice-bleed-inline-end, var(--pc-choice-space-0)));
-    block-size: calc(var(--pc-choice-fill, auto) + var(--pc-choice-bleed-block-start, var(--pc-choice-space-0)) + var(--pc-choice-bleed-block-end, var(--pc-choice-space-0)));
+    /*inline-size: calc(var(--pc-choice-fill, auto) + var(--pc-choice-bleed-inline-start, var(--pc-choice-space-0)) + var(--pc-choice-bleed-inline-end, var(--pc-choice-space-0)));*/
+    /*block-size: calc(var(--pc-choice-fill, auto) + var(--pc-choice-bleed-block-start, var(--pc-choice-space-0)) + var(--pc-choice-bleed-block-end, var(--pc-choice-space-0)));*/
 }
 
 @media (min-width: 30.625em) {
